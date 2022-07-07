@@ -1,7 +1,7 @@
 const { MongoClient } = require('mongodb')
 
 let dbConnection
-let uri ='mongodb+srv://MedBa:1005033Med@atlascluster.3uifz.mongodb.net/?retryWrites=true&w=majority'
+let uri ='mongodb+srv://username:password@atlascluster.3uifz.mongodb.net/?retryWrites=true&w=majority'
 module.exports = {
     connectToDb: (cb) => {
         MongoClient.connect(uri)
